@@ -15,7 +15,6 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 hr {
@@ -166,6 +165,8 @@ template {
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 img {
@@ -256,6 +257,12 @@ $font1: ;
   grid-area: footer;
 }
 
+/* ==========================
+        * shadow *
+========================== */
+/* ==========================
+        * buttons *
+========================== */
 /* ------------------------------ */
 
-/*# sourceMappingURL=style.css.map */ 
+/*# sourceMappingURL=style.css.map */
