@@ -1,6 +1,23 @@
-/* ---variables of global scope--- */
+/* ==========================
+    * Settings And Tools *
+========================== */
+
 @import "settings";
 @import "tools";
-/* ------------------------------ */
-@import "header"
 
+/* ==========================
+        * Layout *
+========================== */
+
+@import "generic";
+@import "header";
+@import "main";
+@import "aside";
+@import "footer";
+
+
+/* ==========================
+        * Responsive *
+========================== */
+
+@import "responsive";
