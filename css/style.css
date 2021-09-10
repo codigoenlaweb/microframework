@@ -186,30 +186,12 @@ $font2: ;
 /* ==========================
         * Base Skeleton *
 ========================== */
-.body1 {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header header" "main aside" "footer footer";
-  margin: 0px auto;
-}
-
-.body2 {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header header" "aside main" "footer footer";
-  margin: 0px auto;
-}
-
-.body3 {
+.layout {
   display: grid;
   width: 100%;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "aside" "main" "footer";
   margin: 0px auto;
 }
 
@@ -217,27 +199,25 @@ $font2: ;
         * Responsive Base Skeleton *
 ====================================== */
 /* Medium Size For Tablet */
-@media screen and (max-width: 900px) {
-  .body1 {
-    grid-template-columns: 72% 28%;
-  }
-
-  .body2 {
-    grid-template-columns: 28% 72%;
+@media (min-width: 750px) {
+  .layout {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header" "main aside" "footer footer";
+    margin: 0px auto;
   }
 }
 /* Small Size For Phone */
-@media screen and (max-width: 500px) {
-  .body1 {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header" "main" "aside" "footer";
-  }
-
-  .body2 {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header" "main" "aside" "footer";
+@media (min-width: 1025px) {
+  .layout {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header" "main aside" "footer footer";
+    margin: 0px auto;
   }
 }
 /* ======================================
