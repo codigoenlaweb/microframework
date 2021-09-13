@@ -16,7 +16,7 @@ main {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 hr {
@@ -27,7 +27,7 @@ hr {
 
 pre {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 a {
@@ -46,7 +46,7 @@ b, strong {
 
 code, kbd, samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 small {
@@ -61,11 +61,11 @@ sub, sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.25rem;
 }
 
 sup {
-  top: -0.5em;
+  top: -0.5rem;
 }
 
 img {
@@ -101,7 +101,7 @@ button, select {
 }
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0.35rem 0.75rem 0.625rem;
 }
 
 legend {
@@ -163,12 +163,12 @@ template {
 /* ==========================
         * Settings *
 ========================== */
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  list-style: none;
+  text-decoration: none;
 }
 
 img {
@@ -179,6 +179,12 @@ img {
 /* ==========================
         * Variables *
 ========================== */
+/*
+$color1: #;
+$color2: #;
+$color3: #;
+$color4: #;
+*/
 /*
 $font1: ;
 $font2: ;
